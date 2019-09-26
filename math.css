@@ -1,0 +1,53 @@
+
+table.tmath {
+	width: auto;
+	background-color: transparent;
+	border-collapse: collapse;
+	box-shadow: none;
+	display: inline-table;
+	vertical-align: middle;
+	color: inherit;
+}
+
+table.tmath tr {
+	background: transparent;
+}
+
+td.div {
+	text-align: center;
+	padding: 1px;
+}
+
+table.tmath td {
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px 5px 1px 5px;
+}
+
+.numerator {
+	border-bottom: 1px solid;
+}
+
+.array-L {
+	border-left: 2px solid;
+}
+
+.array-LR {
+	border-left: 2px solid;
+	border-right: 2px solid;
+}
+
+.sqrt {
+	border-top: 1px solid;
+	padding-top: 2px;
+	display: inline-block;
+}
+
+.exp {
+	display: inline-block;
+}
+
+span.bracket {
+	display: inline-block;
+	font-size: 12px;
+}

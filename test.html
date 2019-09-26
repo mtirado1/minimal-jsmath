@@ -1,0 +1,71 @@
+
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+		<link rel="stylesheet" href="math.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+
+		<h1>Minimal Javascript LaTeX math Implementation</h1>
+
+		<h2>Test an expression!</h3>
+
+		<p>Test your math expression here: <input type="text" id="myText" value="V = \frac{4}{3} \pi r^3"> <button onclick="testExample()">Render</button></p>
+
+		<script>
+			function testExample() {
+				var x = document.getElementById("myText").value;
+				document.getElementById("render").innerHTML = parseMath(x);
+				parseStyle(document.getElementById("render"));
+			}
+		</script>
+
+		<p>Output:</p>
+
+		<center>
+			<span id="render" class="math mblock"></span>
+		</center>
+
+
+		<h2>Examples</h2>
+
+		<p>This is a paragraph with inline math (<span class="math">y = x^2 + 1</span>)</p>
+
+		<p>These are some standalone equations:</p>
+
+		<center>
+			<span class="math mblock">E = \frac{1}{2} m \cdot v^2</span>
+		</center>
+
+		<center>
+			<span class="math mblock">\frac{e^{i \theta}}{cos(\theta) + i \cdot \sin(\theta)} = 1</span>
+		</center>
+
+		<center>
+			<span class="math mblock">x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2 a}</span>
+		</center>
+
+
+		<p>This is a piecewise function:</p>
+
+		<center>
+			<span class="math mblock">x(t) = \begin{cases} x & 0 \leq x < 5 \\ 5 & x \geq 5 \end{cases} </span>
+		</center>
+
+
+		<p>This is an identity matrix:</p>
+
+		<center>
+			<span class="math mblock">A = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 &  1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}</span>
+		</center>
+
+
+
+	</body>
+
+	<script src="math.js"></script>
+
+</html>
