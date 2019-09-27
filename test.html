@@ -18,6 +18,7 @@
 		<script>
 			function testExample() {
 				var x = document.getElementById("myText").value;
+				x = x.replace(/&/g, "&amp;");
 				document.getElementById("render").innerHTML = parseMath(x);
 				parseStyle(document.getElementById("render"));
 			}
