@@ -58,7 +58,7 @@ var replacements = [
 [/\\begin{cases}/g, "<table class=\"tmath array array-L\"><tr><td  class=\"cell\">"],
 [/\\end\{(array|cases|bmatrix)\}/g, "</td></tr></table>"],
 
-[/\\(left)[ ]?(\(|\)|\[|\]|\\\}|\\\{|\.|\})/g, "<span class=\"bracket\">$2</span><span class=\"autofit\">"],
+[/\\(left)[ ]?(\(|\)|\[|\]|\\\}|\\\{|\.|\}|\|)/g, "<span class=\"bracket\">$2</span><span class=\"autofit\">"],
 [/\\(right)[ ]?(\(|\)|\[|\]|\\\}|\\\{|\.|\|)/g, "</span><span class=\"bracket\">$2</span>"],
 
 [/\\\\/g, "</td></tr><tr><td>"],
