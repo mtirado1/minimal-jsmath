@@ -13,7 +13,7 @@ table.tmath tr {
 	background: transparent;
 }
 
-td.div {
+table.tmath td.div {
 	text-align: center;
 	padding: 1px;
 }
@@ -22,17 +22,18 @@ table.tmath td {
 	text-align: center;
 	vertical-align: middle;
 	padding: 0px 5px 1px 5px;
+	border: none;
 }
 
-.numerator {
+table.tmath td.numerator {
 	border-bottom: 1px solid;
 }
 
-.array-L {
+table.tmath.array-L {
 	border-left: 2px solid;
 }
 
-.array-LR {
+table.tmath.array-LR {
 	border-left: 2px solid;
 	border-right: 2px solid;
 }
